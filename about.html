@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a class="active" aria-current="page" href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">About Us</li>
+    </ol>
+  </nav>
+
+<main class="container">
+
+  <section class="page-heading">
+    <h1>About Us</h1>
+    <p class="page-intro">Elite Sports Club brings people together through sports, fitness and an active lifestyle.</p>
+  </section>
+
+  <section class="about-mission">
+    <h2>Our Mission</h2>
+    <p>Our mission is to encourage people of all ages and fitness levels to stay active, develop new sporting skills and build healthy, lasting habits. Through classes, training sessions and community events led by qualified activity leaders and instructors, we create a welcoming place where members connect with others, improve their wellbeing and enjoy sport together.</p>
+  </section>
+
+
+  <section class="team-section" aria-labelledby="team-title">
+    <h2 id="team-title">Meet Our Team</h2>
+    <p class="team-hint">Scroll sideways to see all activity leaders and instructors. Select a name to open the profile.</p>
+    <div class="instructors-list">
+        <article class="instructor-card">
+          <a class="instructor-photo-link" href="instructor-1.html"><img src="images/instructor-1-rachel-morgan.jpg" alt="Rachel Morgan"></a>
+          <h3><a class="profile-link" href="instructor-1.html">Rachel Morgan</a></h3>
+          <p class="instructor-specialty">Pilates Instructor</p>
+          <a class="view-profile" href="instructor-1.html">View Profile &rarr;</a>
+        </article>
+        <article class="instructor-card">
+          <a class="instructor-photo-link" href="instructor-2.html"><img src="images/instructor-2-ethan-collins.jpg" alt="Ethan Collins"></a>
+          <h3><a class="profile-link" href="instructor-2.html">Ethan Collins</a></h3>
+          <p class="instructor-specialty">Tennis Instructor</p>
+          <a class="view-profile" href="instructor-2.html">View Profile &rarr;</a>
+        </article>
+        <article class="instructor-card">
+          <a class="instructor-photo-link" href="instructor-3.html"><img src="images/instructor-3-marcus-reed.jpg" alt="Marcus Reed"></a>
+          <h3><a class="profile-link" href="instructor-3.html">Marcus Reed</a></h3>
+          <p class="instructor-specialty">Football &amp; Basketball Coach</p>
+          <a class="view-profile" href="instructor-3.html">View Profile &rarr;</a>
+        </article>
+        <article class="instructor-card">
+          <a class="instructor-photo-link" href="instructor-4.html"><img src="images/instructor-4-olivia-bennett.jpg" alt="Olivia Bennett"></a>
+          <h3><a class="profile-link" href="instructor-4.html">Olivia Bennett</a></h3>
+          <p class="instructor-specialty">Swimming &amp; Running Coach</p>
+          <a class="view-profile" href="instructor-4.html">View Profile &rarr;</a>
+        </article>
+    </div>
+  </section>
+
+
+  <section class="join-team-section" aria-labelledby="join-title">
+    <h2 id="join-title">Join Our Team</h2>
+    <p class="join-intro">Want to lead an activity or teach a class? Send us your details.</p>
+
+    <form id="join-team-form" action="about.html" method="post" enctype="multipart/form-data">
+
+      <div class="join-team-grid">
+
+    <div class="form-column">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" >
+        </div>
+
+        <div class="form-group">
+            <label for="photo">Photo</label>
+            <input type="file" id="photo" name="photo" accept="image/*" >
+        </div>
+
+        <div class="form-group">
+            <label for="birth-date">Date of Birth</label>
+            <input type="date" id="birth-date" name="birth-date" >
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" >
+        </div>
+    </div>
+
+    <div class="form-column">
+        <div class="form-group">
+            <label for="expertise">Area of Expertise</label>
+            <input type="text" id="expertise" name="expertise" >
+        </div>
+
+        <div class="form-group">
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" rows="3" ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="education">Education</label>
+            <input type="text" id="education" name="education" >
+        </div>
+    </div>
+
+</div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+  </section>
+
+</main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  <script src="js/about.js"></script>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

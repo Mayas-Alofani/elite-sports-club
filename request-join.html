@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request to Join an Offering | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a class="active" href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li aria-current="page">Request to Join an Offering</li>
+    </ol>
+  </nav>
+
+<main class="container">
+    <section class="page-heading request-heading">
+      <h1>Request to Join an <span>Offering</span></h1>
+      <p class="page-intro">Choose an offering and your level, then send your request to the club.</p>
+    </section>
+
+    <form id="request-join-form" class="form-card request-form" action="member-dashboard.html" method="post">
+      <div class="form-group">
+        <label for="join-offering">Select Offering</label>
+        <select id="join-offering" name="offering">
+          <option value="">-- Choose an offering --</option>
+          <option value="tennis">Championship Tennis</option>
+          <option value="football">Football</option>
+          <option value="pilates">Pilates</option>
+          <option value="swimming">Swimming</option>
+          <option value="basketball">Basketball</option>
+          <option value="running">Morning Running Club</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="join-level">Select Level</label>
+        <select id="join-level" name="level">
+          <option value="">-- Choose your level --</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="join-name">Full Name</label>
+        <input type="text" id="join-name" name="full-name" placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="join-date">Preferred Date</label>
+        <input type="date" id="join-date" name="preferred-date">
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a class="btn btn-outline" href="member-dashboard.html">Cancel</a>
+      </div>
+    </form>
+
+    <section id="added-requests" class="added-requests" hidden>
+      <h2 class="section-title">Requests Added in This Session</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Requests added in this session</caption>
+          <thead>
+            <tr>
+              <th scope="col">Offering</th>
+              <th scope="col">Level</th>
+              <th scope="col">Full Name</th>
+              <th scope="col">Preferred Date</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody id="added-requests-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/request-join.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add a New Offering | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a class="active" href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+      <li aria-current="page">Add a New Offering</li>
+    </ol>
+  </nav>
+
+<main class="container">
+    <section class="page-heading">
+      <h1>Add a New <span>Offering</span></h1>
+      <p class="page-intro">Fill in the details below to publish a new class, activity or experience for club members.</p>
+    </section>
+
+    <form id="add-offering-form" class="form-card add-offering-form" action="manager-dashboard.html" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="offering-name">Offering Name</label>
+        <input type="text" id="offering-name" name="offering-name" placeholder="e.g. Beginner Yoga" >
+      </div>
+
+      <div class="form-group">
+        <label for="offering-price">Price or Registration Fee (SR)</label>
+        <input type="text" id="offering-price" name="offering-price" placeholder="0">
+        <p class="field-hint">Enter 0 for a free offering.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="offering-image">Offering Image</label>
+        <input type="file" id="offering-image" name="offering-image" accept="image/*" >
+      </div>
+
+      <div class="form-group">
+        <label for="offering-description">Description</label>
+        <textarea id="offering-description" name="offering-description" rows="6" placeholder="Describe what members will do and learn in this offering." ></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <a class="btn btn-outline" href="manager-dashboard.html">Cancel</a>
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="js/add-offering.js"></script>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

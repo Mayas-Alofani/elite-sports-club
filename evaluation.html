@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offering Evaluation | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a class="active" href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li aria-current="page">Offering Evaluation</li>
+    </ol>
+  </nav>
+
+<main class="container">
+    <section class="page-heading evaluation-heading">
+      <h1>Offering <span>Evaluation</span></h1>
+      <p class="page-intro">Rate an offering you have completed and share your feedback.</p>
+    </section>
+
+    <form id="evaluation-form" class="form-card evaluation-form" action="member-dashboard.html" method="post">
+      <div class="form-group">
+        <label for="eval-offering">Select a Previous Offering *</label>
+        <select id="eval-offering" name="offering">
+          <option value="">-- Choose a completed offering --</option>
+          <option value="tennis">Championship Tennis</option>
+          <option value="swimming">Swimming</option>
+          <option value="running">Morning Running Club</option>
+        </select>
+      </div>
+
+      <fieldset class="rating-group">
+        <legend>Rating *</legend>
+        <div class="star-rating">
+          <input type="radio" id="rate-5" name="rating" value="5">
+          <label for="rate-5"><span class="visually-hidden">5 stars - Excellent</span></label>
+          <input type="radio" id="rate-4" name="rating" value="4">
+          <label for="rate-4"><span class="visually-hidden">4 stars - Very good</span></label>
+          <input type="radio" id="rate-3" name="rating" value="3">
+          <label for="rate-3"><span class="visually-hidden">3 stars - Good</span></label>
+          <input type="radio" id="rate-2" name="rating" value="2">
+          <label for="rate-2"><span class="visually-hidden">2 stars - Fair</span></label>
+          <input type="radio" id="rate-1" name="rating" value="1">
+          <label for="rate-1"><span class="visually-hidden">1 star - Poor</span></label>
+        </div>
+        <p class="rating-labels"><span>1 - Poor</span><span>5 - Excellent</span></p>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="eval-feedback">Written Feedback *</label>
+        <textarea id="eval-feedback" name="feedback" rows="5" placeholder="Write your feedback..."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Submit Evaluation</button>
+        <a class="btn btn-outline" href="member-dashboard.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/evaluation.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

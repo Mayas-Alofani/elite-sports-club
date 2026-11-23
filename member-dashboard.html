@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Member Dashboard | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a class="active" aria-current="page" href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Member Dashboard</li>
+    </ol>
+  </nav>
+
+<main class="container">
+    <section class="page-heading">
+      <p class="eyebrow">Member Area</p>
+      <h1>Member <span>Dashboard</span></h1>
+      <p class="page-intro">Track your participation requests and jump to the actions you need.</p>
+    </section>
+
+    <section class="requests-section">
+      <h2 class="section-title">Previous Participation Requests</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Previous participation requests</caption>
+          <thead>
+            <tr>
+              <th scope="col">Offering Name</th>
+              <th scope="col">Request Date</th>
+              <th scope="col">Cost</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Championship Tennis</td>
+              <td>12/09/2026</td>
+              <td>200 SR</td>
+              <td><span class="status status-completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>Football</td>
+              <td>05/10/2026</td>
+              <td>250 SR</td>
+              <td><span class="status status-pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Pilates</td>
+              <td>18/10/2026</td>
+              <td>350 SR</td>
+              <td><span class="status status-declined">Declined</span></td>
+            </tr>
+            <tr>
+              <td>Swimming</td>
+              <td>02/08/2026</td>
+              <td>300 SR</td>
+              <td><span class="status status-completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>Morning Running Club</td>
+              <td>20/07/2026</td>
+              <td>0 SR</td>
+              <td><span class="status status-completed">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="dashboard-links">
+      <h2 class="visually-hidden">Member actions</h2>
+      <a class="dashboard-link btn btn-dark" href="request-join.html">Request to Join an Offering</a>
+      <a class="dashboard-link btn btn-dark" href="evaluation.html">Offering Evaluation</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 50 150 200" width="150" height="200">
+  <title>Elite Sports Club logo</title>
+  <defs>
+    <mask id="cut">
+      <rect x="0" y="0" width="200" height="300" fill="#fff"/>
+      <ellipse cx="85" cy="150" rx="33" ry="53" fill="#000"/>
+      <polygon points="80,150 100,120 170,92 170,200 100,177" fill="#000"/>
+    </mask>
+  </defs>
+  <ellipse cx="85" cy="150" rx="74" ry="95" fill="#ffffff" mask="url(#cut)"/>
+  <circle cx="126" cy="147" r="17" fill="#c8f334"/>
+</svg>

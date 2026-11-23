@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager Dashboard | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="offerings.html">Offerings</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a class="active" aria-current="page" href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Manager Dashboard</li>
+    </ol>
+  </nav>
+
+  <main class="container">
+    <section class="page-heading">
+      <p class="eyebrow">Management Area</p>
+      <h1>Club Manager <span>Dashboard</span></h1>
+      <p class="page-intro">Review all offerings you manage and open the management tools.</p>
+    </section>
+
+    <section class="manager-offerings-section">
+      <h2 class="section-title">My Offerings</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Offerings managed by this manager</caption>
+          <thead>
+            <tr>
+              <th scope="col">Offering Name</th>
+              <th scope="col">Instructor</th>
+              <th scope="col">Fee</th>
+              <th scope="col">Level</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="manager-offerings-body">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="dashboard-links">
+      <h2 class="visually-hidden">Manager actions</h2>
+      <a class="dashboard-link btn btn-dark" href="add-offering.html">Add a New Offering</a>
+      <a class="dashboard-link btn btn-dark" href="manage-team.html">Manage Activity Leaders and Instructors</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/manager.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

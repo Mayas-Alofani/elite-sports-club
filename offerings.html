@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Offerings | Elite Sports Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <span class="brand-name">ELITE<br>SPORTS<br>CLUB</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" aria-current="page" href="offerings.html">Offerings</a></li>
+          <li><a href="member-dashboard.html">Member Dashboard</a></li>
+          <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol class="container">
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Club Offerings</li>
+    </ol>
+  </nav>
+
+<main class="container">
+    <section class="page-heading">
+      <p class="eyebrow">Club Offerings</p>
+      <h1>All <span>Offerings</span></h1>
+      <p class="page-intro">Every class, training session and experience the club offers, with its price or registration fee.</p>
+    </section>
+
+    <div class="offerings-toolbar">
+      <p class="offerings-count"><strong>6</strong> programs available</p>
+      <form class="sort-form" action="offerings.html" method="get">
+        <label for="sort">Sort by</label>
+        <select id="sort" name="sort">
+          <option value="random" selected>Random</option>
+          <optgroup label="Price">
+            <option value="price-asc">Low to High</option>
+            <option value="price-desc">High to Low</option>
+          </optgroup>
+          <optgroup label="Name">
+            <option value="name-asc">A–Z</option>
+            <option value="name-desc">Z–A</option>
+          </optgroup>
+        </select>
+      </form>
+    </div>
+
+    <section class="offerings-list" id="offerings-list" aria-labelledby="offerings-title">
+      <h2 id="offerings-title" class="visually-hidden">Offerings catalogue</h2>
+      <article class="offering-card">
+        <span class="offering-number">01</span>
+        <img src="images/pilates.jpg" alt="Pilates offering">
+        <div class="offering-body">
+          <h2>Pilates</h2>
+          <p>Build core strength, flexibility and posture through controlled, low-impact movement on the mat and with the Pilates ring.</p>
+          <div class="offering-meta">
+            <span class="level">Beginner</span>
+            <span class="price">350 SR</span>
+          </div>
+        </div>
+      </article>
+      <article class="offering-card">
+        <span class="offering-number">02</span>
+        <img src="images/tennis.jpg" alt="Championship Tennis offering">
+        <div class="offering-body">
+          <h2>Championship Tennis</h2>
+          <p>Sharpen your serve, footwork and match strategy with structured drills and friendly competitive games.</p>
+          <div class="offering-meta">
+            <span class="level">Intermediate</span>
+            <span class="price">200 SR</span>
+          </div>
+        </div>
+      </article>
+      <article class="offering-card">
+        <span class="offering-number">03</span>
+        <img src="images/football.jpg" alt="Football offering">
+        <div class="offering-body">
+          <h2>Football</h2>
+          <p>Train ball control, passing and teamwork in small-sided games led by qualified coaches.</p>
+          <div class="offering-meta">
+            <span class="level">All levels</span>
+            <span class="price">250 SR</span>
+          </div>
+        </div>
+      </article>
+      <article class="offering-card">
+        <span class="offering-number">04</span>
+        <img src="images/swimming.jpg" alt="Swimming offering">
+        <div class="offering-body">
+          <h2>Swimming</h2>
+          <p>Improve your technique, breathing and endurance in lane sessions grouped by ability.</p>
+          <div class="offering-meta">
+            <span class="level">Beginner</span>
+            <span class="price">300 SR</span>
+          </div>
+        </div>
+      </article>
+      <article class="offering-card">
+        <span class="offering-number">05</span>
+        <img src="images/basketball.jpg" alt="Basketball offering">
+        <div class="offering-body">
+          <h2>Basketball</h2>
+          <p>Develop dribbling, shooting and court awareness, then put it all together in team scrimmages.</p>
+          <div class="offering-meta">
+            <span class="level">Intermediate</span>
+            <span class="price">220 SR</span>
+          </div>
+        </div>
+      </article>
+      <article class="offering-card">
+        <span class="offering-number">06</span>
+        <img src="images/running.jpg" alt="Morning Running Club offering">
+        <div class="offering-body">
+          <h2>Morning Running Club</h2>
+          <p>Start the weekend with a social group run around the track, open to every pace and every member.</p>
+          <div class="offering-meta">
+            <span class="level">All levels</span>
+            <span class="price price-free">0 SR <small>Free</small></span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Elite Sports Club logo">
+        <p>Bringing people together through sport, fitness and an active, healthy lifestyle.</p>
+      </div>
+      <div class="footer-col">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Email: <a href="mailto:info@elitesportsclub.sa">info@elitesportsclub.sa</a></li>
+          <li>Phone: <a href="tel:+966110000000">+966 11 000 0000</a></li>
+          <li>Riyadh, Saudi Arabia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>Instagram: @elitesportsclub</li>
+          <li>X: @elitesportsclub</li>
+          <li>TikTok: @elitesportsclub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Elite Sports Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/offerings.js"></script>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
